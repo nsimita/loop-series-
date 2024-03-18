@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int i, n,sum=0;
+    float  avg;
+    scanf("%d",&n);
+      for(  i=1; i<=n; i++){
+          if(i==n){
+              printf("%d",i);
+          }
+          else{
+              printf("%d, ",i);
+          }
+          sum=sum+i;
+      }
+      avg= sum/n;
+      printf("\n sum= %d",sum);
+      printf("\n avg= %f",avg );
+
+    return 0;
+}
