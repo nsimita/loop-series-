@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+     int i,j,n, sum=0, sign=1;
+     scanf("%d",&n);
+     for(i=1,j=10; i<=n; i++,j=j*2){
+         
+       if(i%2==0){
+           j=j*-sign;
+           sum+=j;
+           printf("%d ",j);
+           j=j*-sign;
+       }
+       else{
+          
+           sum+=j;
+            printf("%d ",j);
+       }
+     }
+     printf("\n %d",sum);
+    return 0;
+}
